@@ -8,7 +8,10 @@
    src: url(../assets/fonts/ArchitectsDaughter-Regular.ttf);
 }
 
-
+/* @font-face {
+   font-family: segoeUIFont;
+   src: url(../assets/fonts/SEGOEUI.TTF);
+} */
 
 /*
     ! Browser Default
@@ -19,10 +22,22 @@
     padding: 0;
     box-sizing: border-box;
  }
+ 
 
  body{
    font-family: 'Roboto', sans-serif;
     background-color: #05405f;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+    margin: 0;
+    padding: 0;
  }
 
  .header__content{
@@ -65,7 +80,7 @@
  }
 
  .address-section{
-   padding: 15px 20px;
+   padding: 20px 0px;
  }
 
 
@@ -74,15 +89,16 @@
 }
 
 .home__content h5{
-   font-size: 20px;
+   font-size: 18px;
    line-height: 22px;
-   font-weight: 700;
+   font-weight: 600;
    color: #05405f;
 }
 
 .home__content p{
    font-size: 15px;
    font-weight: 400;
+   line-height: 23px;
    color: #7a7a7a;
 }
 
@@ -93,16 +109,18 @@
    margin-top: 10px;
  }
 
-  .header__lang__btn--color {
-     background-color: #05405f;
-     color: #fff;
-  }
+.header__lang__btn--color {
+   background-color: #05405f;
+   color: #fff;
+}
 
-  .header__lang__btn--color a {
-     color: #fff;
-     font-size: 20px;
-     font-weight: 600;
-  }
+.header__lang__btn--color a {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 20px;
+}
+
 
 /* menu section */
 .menu{
@@ -122,21 +140,45 @@
    margin-bottom: 10px;
 }
 
-.menu-item p{
-   font-size: 30px;
+.menu-item a{
+   font-size: 25px;
+   text-decoration: none;
    text-transform: uppercase;
+   line-height: 25px;
    font-weight: 600;
    color: #fff;
-   padding-left: 93px;
-   padding-top: 10px;
+   /* padding-left: 93px; */
+   /* padding-top: 10px; */
+}
+
+.item-data--1{
+   padding-top: 20px;
+   padding-left: 100px;
+}
+.item-data--2{
+   padding-left: 125px;
+   padding-top: 20px;
+}
+.item-data--3 {
+   padding-left: 105px;
+   padding-top: 20px;
+}
+.item-data--4 {
+   padding-left: 105px;
+   padding-top: 20px;
+}
+.item-data--5 {
+   padding-left: 135px;
+   padding-top: 20px;
 }
 
 .banner-title{
-   background-color: #fff;
-   padding: 5px 20px;
+   background-color: #eeeeee;
+   padding: 15px 20px;
    color: #05405f;
    font-size: 32px;
-   font-weight: 700;
+   line-height: 32px;
+   font-weight: 600;
    text-align: center;
    /* margin-bottom: 20px; */
 }
@@ -149,6 +191,8 @@
 .menu-photo img{
    margin-top: 30px;
 }
+
+/* about section */
 
 .about{
    background-color: #f2f2f4;
@@ -167,10 +211,14 @@
 }
 
 .about__title p{
-   font-size: 40px;
+   font-family: 'Segoe UI', sans-serif;;
+   font-size: 35px;
    font-weight: 700;
+   /* font-weight: bold; */
+   line-height: 42px;
    color: #05405f;
    padding-top: 15px;
+
 }
 
 .dashed-line {
@@ -193,9 +241,11 @@
 }
 
 .about__right p{
-   font-size: 30px;
-   font-weight: 700;
+   font-size: 25px;
+   line-height: 25px;
+   font-weight: 600;
    color: #05405f;
+   padding-bottom: 30px;
 }
 
 .review-section{
@@ -204,19 +254,23 @@
 
 .review__content{
    text-align: center;
+   padding-top: 20px;
 }
 
 .review__amt{
    color: #05405f;
-   font-size: 35px;
+   font-size: 32px;
+   line-height: 38px;
    font-weight: 500;
+   font-family: 'Segoe UI', sans-serif;
 }
 
 
 .review__client{
-   font-size: 35px;
+   font-size: 32px;
+   line-height: 38px;
    font-weight: 700;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Segoe UI', sans-serif;
    font-style: italic;
    color: #000000;
    /* padding-top: -10px; */
@@ -226,6 +280,8 @@
    width: 100%;
 }
 
+
+/* card section */
 .card-section{
    background-color: #05405f;
 }
@@ -252,12 +308,13 @@
    color: #090a09;
    line-height: 29px;
    padding: 0px 30px;
+   padding-top: 20px;
 }
 
 .card-details{
    font-size: 16px;
    color: #616161;
-   padding: 30px;
+   padding: 25px;
 }
 
 .card__design{
@@ -276,9 +333,10 @@
 
 /* Client */
 .client{
-   background-color: #eeeeee;
-   /* text-align: center; */
-   padding: 50px 0px;
+   background-color: #f7f9fb;
+   font-family: 'Segoe UI', sans-serif;
+   padding-top: 50px;
+   padding-bottom: 150px;
 }
 
 .client__title--top {
@@ -288,6 +346,7 @@
 
 .client__title--top p{
    font-size: 35px;
+   line-height: 42px;
    font-weight: 700;
    text-align: center;
 }
@@ -300,6 +359,7 @@
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    padding: 50px 0px;
    border-radius: 5px;
+   background-color: #ffffff;
 }
 
 .client__profile img{
@@ -334,7 +394,14 @@
 
 .client__message p{
    font-size: 16px;
+   line-height: 24px;
    font-weight: 400;
+}
+
+.client__title h4 {
+   font-size: 18px;
+   line-height: 18px;
+   font-weight: 700;
 }
 
 .client__title p{
@@ -349,7 +416,7 @@
 /* footer section */
 
 .footer-body{
-   padding: 50px 0px;
+   padding-top: 50px;
 }
 
 .footer__social{
@@ -367,7 +434,7 @@
 }
 
 .footer__data{
-   /* padding: 20px 0px; */
+   padding: 70px 0px;
 }
 
 .footer_content{
@@ -409,7 +476,6 @@
    background-color: red;
    display: inline-block;
    border-radius: 10%;
-   /* border-radius: 40px solid #fff; */
 }
 
 .signup__btn a{
@@ -419,7 +485,6 @@
 }
 
 .footer__links img{
-   /* padding: 30px; */
    width: 100%;
 }
 
@@ -434,6 +499,7 @@
 
 .contact__details{
    font-size: 18px;
+   padding-top: 20px;
    padding-right: 30px;
    font-weight: 400;
    margin-bottom: 30px;
@@ -448,6 +514,7 @@
 .title__pay{
    font-family: myFirstFont;
    font-size: 26px;
+   padding-bottom: 15px;
 }
 
 footer{
@@ -455,9 +522,11 @@ footer{
 }
 
 .footer-section{
+   font-family: 'Segoe UI', sans-serif;
    padding: 50px 0px;
    color: #fff;
    font-size: 16px;
+   line-height: 24px;
    font-weight: 500;
 }
 
